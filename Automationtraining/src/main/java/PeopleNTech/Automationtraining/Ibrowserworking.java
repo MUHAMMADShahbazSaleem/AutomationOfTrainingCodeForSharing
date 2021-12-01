@@ -8,7 +8,7 @@ static WebDriver driver;
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		//i)How to open the browser
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\IGU Staff\\eclipse-workspace\\Automationtraining\\src\\Drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\IGU Staff\\git\\AutomationOfTrainingCodeForSharing\\Automationtraining\\src\\Drivers\\chromedriver.exe");
       driver=new ChromeDriver();
       driver.navigate().to("https://www.amazon.com");
       driver.manage().window().maximize();
