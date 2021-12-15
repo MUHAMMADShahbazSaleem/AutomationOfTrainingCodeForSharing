@@ -9,6 +9,7 @@ public class SignInPage {
 	public WebDriver driver;
 @FindBy(name = "email") WebElement Email;
 @FindBy(id = "continue") WebElement Continue;
+@FindBy(xpath = "//*[contains(text(), 'We cannot find an account ')]") WebElement error;
 public SignInPage(WebDriver driver) {
 	this.driver=driver;
 	PageFactory.initElements(driver, this);
@@ -18,5 +19,10 @@ public void EmailFieldSendKeys() {
 }
 public void ContinueButtonClick() {
 	Continue.click();
+}
+public String text() {
+String errorof=	error.getText();
+return errorof;
+	
 }
 }
