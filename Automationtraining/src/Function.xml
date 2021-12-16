@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Ädhoc">
+<parameter name="browser" value="Edge"></parameter>
+<parameter name= "wbsite" value="https://www.amazon.com"></parameter>
+<test name="Regression">
+<classes>
+<class name="PeopleNTech.Automationtraining.SignInAmazon"></class>
+<class name="PeopleNTech.Automationtraining.SignInAmazon2"></class>
+</classes>
+</test>
+</suite>
